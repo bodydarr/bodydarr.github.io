@@ -83,13 +83,23 @@
          margin-right: auto;
     }
     /*Image*/
-    img {
-        display: block;
-        margin: 0 auto 24px auto;
-        width: 250px;
-        border: 4px solid var(--red);
-        border-radius: 8px;
-    }
+    .image-row {
+     display: flex;
+     gap: 8px;
+     margin-bottom: 32px;
+     max-width: 860px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+   .image-row img {
+     flex: 1;
+     height: 150px;
+     width: auto;
+     object-fit: cover;
+     border: 3px solid var(--red);
+     border-radius: 8px;
+}
     /* section panels*/
     .section-box {
         background-color: var(--panel);
@@ -133,11 +143,13 @@
 
 <body>
 <h1> Roblox games are actually good</h1>
-<img src="noFilter (2).webp" width="250">
-<img src="noFilter (3).webp" width="250">
-<img src="gpoimg.webp" width="250">
-<img src="noFilter (4).webp" width="250">
-<img src="su.webp" width="250">
+    <div class="image-row">
+    <img src="noFilter (2).webp">
+    <img src="noFilter (3).webp">
+    <img src="gpoimg.webp">
+    <img src="noFilter (4).webp">
+    <img src="su.webp">
+</div>
 <h2> Bio</h2>
 <div class="section-box">
 </p>
